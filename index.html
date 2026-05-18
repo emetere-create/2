@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/popup.css">
+</head>
+
+<body>
+  <div class="main-background" style="display: flex;">
+    <main class="main">
+      <div class="main__content">
+        <picture>
+          <source srcset="/images/Logo-table.svg" media="(max-width: 1280px)">
+          <source srcset="/images/Logo-mobail.svg" media="(max-width: 640px)">
+          <img src="/images/Logo.svg" class="main__content-logo">
+        </picture>
+        
+        <h2 class="main__content-heading">ABOUT</h2>
+  
+        <p class="main__content-text">
+          I am one man – I am not a company. I am a husband, a father and an artist. My wife and three little kids are a source of inspiration and happiness. I’m also inspired by the beautiful world just outside my door. I live in the Pacific Northwest and find inspiration in the trees, the rivers and the fields.
+        </p>
+  
+        <p class="main__content-text">
+          I create – I do not produce. I create because I love to. It’s so much fun and a pleasure to go to work. My pieces are handmade, in the truest sense of the word. I make one piece at a time and give it my full attention, starting with a tree and ending up with functional art. I love the idea of taking a discarded tree and giving in new life. I think the natural world is beautiful, and I love what I do.
+        </p>
+  
+        <h2 class="main__content-heading">PRODUCTS</h2>
+  
+        <div class="main__content-choice">
+          <button class="button-item">TABLES</button>
+          <button class="button-item">CHAIRS</button>
+          <button class="button-item">BEDS</button>
+          <button class="button-item">WARDROBES</button>
+          <button class="button-item">PANELS</button>
+          <button class="button-item">LIVE EDGES</button>
+        </div>
+        
+        <h2 class="main__content-heading">CONTACT WITH ME</h2>
+  
+        <form class="main__content-form">
+          <input type="text" class="main__content-form-fild" placeholder="Your phone number">
+
+          <input type="text" class="main__content-form-fild" placeholder="black_jack_64@mail.ru"> 
+
+          <input type="text" class="main__content-form-message" placeholder="Hello, Greg! how much does the table cost?">   
+
+          <button class="button-item main__content-form-button" href="#" id="btn">SEND A MESSAGE</button>
+        </form>
+
+        <div class="form" id="modal">
+          <div class="form__box">
+            <div class="form__title">YOUR APPLICATION HAS BEEN SUCCESSFULLY SENT!</div>
+              <div class="form__bottom">
+                <a href="#" class="btn btn--close" id="btn_close">Close</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      <div class="main__photo">
+        <picture>
+          <source srcset="/images/man-table.svg" media="(max-width: 1600px)">
+          <source srcset="/images/man-mobail.svg" media="(max-width: 640px)">
+          <img src="/images/man.svg" class="main__photo-image">
+        </picture>
+      </div>
+    </main>
+  </div>
+</body>
+
+<script src="script.js"></script>
+</html>
+

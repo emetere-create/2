@@ -1,0 +1,230 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.button-item {
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  padding: 13.5px 24px 13.5px 24px;
+  color: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") forma("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+.main-background {
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 48.56%, rgba(0, 0, 0, 0) 100%);
+}
+@media screen and (max-width: 768px) {
+  .main {
+    display: block;
+    height: -moz-max-content;
+    height: max-content;
+    overflow: auto;
+  }
+}
+.main__content {
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  padding: 114px 50px 26px 0;
+  padding-left: clamp(32px, 8vw, 142px);
+  overflow: auto;
+}
+@media screen and (max-width: 768px) {
+  .main__content {
+    width: 100%;
+    padding: 48px 32px 32px 32px;
+    background: transparent;
+  }
+}
+.main__content-logo {
+  width: 100%;
+}
+.main__content-heading {
+  overflow: auto;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 37.5px;
+  margin: 64px 0 26px 0;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 992px) {
+  .main__content-heading {
+    margin: 24px 0 12px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__content-heading {
+    text-align: center;
+    margin-top: 32px;
+  }
+}
+.main__content-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.44px;
+  color: #FFFFFF;
+  text-indent: 1em;
+}
+.main__content-choice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+@media screen and (max-width: 768px) {
+  .main__content-choice {
+    justify-content: center;
+  }
+}
+.main__content-choice .button-item:focus{
+  background-color: #4FB5C0;
+  border: 4px solid #6AECF8;
+}
+.main__content-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 0;
+  max-width: 596px;
+}
+@media screen and (max-width: 768px) {
+  .main__content-form {
+    max-width: 100%;
+  }
+}
+.main__content-form-fild {
+  width: 49%;
+  height: 48px;
+}
+@media screen and (max-width: 992px) {
+  .main__content-form-fild {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__content-form-fild {
+    width: 100%;
+    max-width: none;
+  }
+}
+.main__content-form-message {
+  width: 100%;
+  height: 108px;
+}
+@media screen and (max-width: 992px) {
+  .main__content-form-message {
+    width: 69%;
+    height: 68px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__content-form-message {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main__content-form-button {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__content-form-button {
+    margin: 0 auto;
+    width: 40%;
+  }
+}
+.main__photo {
+  width: 30%;
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .main__photo {
+    width: 100%;
+  }
+}
+.main__photo-image {
+  position: absolute;
+  bottom: 0;
+  right: 53px;
+}
+@media screen and (max-width: 768px) {
+  .main__photo-image {
+    position: static;
+  }
+}/*# sourceMappingURL=style.css.map */

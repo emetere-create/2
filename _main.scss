@@ -1,0 +1,150 @@
+.main-background {
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 48.56%, rgba(0, 0, 0, 0) 100%);
+
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    height: max-content;
+    overflow: auto;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    padding: 114px 50px 26px 0;
+    padding-left: clamp(32px, 8vw, 142px);
+    overflow: auto;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding: 48px 32px 32px 32px;
+      background: transparent;
+    }
+
+    &-logo {
+      width: 100%;
+    }
+
+    &-heading {
+      overflow: auto;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 37.5px;
+      margin: 64px 0 26px 0;
+      color: #FFFFFF;
+
+      @media screen and (max-width: 992px) {
+        margin: 24px 0 12px 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        margin-top: 32px;
+      }
+    }
+
+    &-text {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 23.44px;
+      color: #FFFFFF;
+      text-indent: 1em;
+    }
+
+    &-choice {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+      }
+
+      .button-item:focus { 
+        background-color: #4FB5C0;
+        border: 4px solid #6AECF8;
+      }
+    }
+
+    &-form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px 0;
+      max-width: 596px;
+
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+      }
+
+      &-fild {
+        width: 49%;
+        height: 48px;
+
+        @media screen and (max-width: 992px) {
+          height: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          max-width: none;
+         }
+      }
+
+      &-message {
+        width: 100%;
+        height: 108px;
+
+        @media screen and (max-width: 992px) {
+          width: 69%;
+          height: 68px;
+        }
+
+        @media screen and (max-width: 768px) {
+         width: 100%;
+        }
+      }
+
+      &-button {
+        @media screen and (max-width: 992px) {
+          width: 30%;
+        }
+
+        @media screen and (max-width: 768px) {
+          margin: 0 auto;
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  &__photo {
+    width: 30%;
+    position: relative;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    &-image {
+      position: absolute;
+      bottom: 0;
+      right: 53px;
+
+      @media screen and (max-width: 768px) {
+        position: static;
+      }
+    }
+  }
+}
